@@ -78,20 +78,20 @@
 902 '   <LIST OF MOVES> IS <- MOVE FROM><- MOVE TO><LIST OF MOVES>
 2000 M$=""
 2010 FOR J%=1% TO 9%
-2011     IF MID$(P$,J%,1%)<>Q$ THEN 2050
-2015     T%=J%+D%*3%: IF T%<1% OR T%>9% THEN 2025
-2020     IF MID$(P$,T%,1%)="-" THEN J$=FNNUM$(J%): T$=FNNUM$(T%): M$=M$+FNN$(J$)+FNN$(T$)
-2025     T%=J%+D%*2%
-2026     IF T%<1% OR T%>9% OR (D%=1% AND (J%=1% OR J%=4% OR J%=7%)) OR (D%=-1% AND (J%=3% OR J%=6% OR J%=9%)) THEN 2035
-2030     IF INSTR(1%,Q$+"-",MID$(P$,T%,1%))=0% THEN J$=FNNUM$(J%):T$=FNNUM$(T%):M$=M$+FNN$(J$)+FNN$(T$)
-2035     T%=J%+D%*4%: IF T%<1% OR T%>9% OR J%=3% OR J%=7% THEN 2050
-2040     IF INSTR(1%,Q$+"-",MID$(P$,T%,1%))=0% THEN J$=FNNUM$(J%):T$=FNNUM$(T%):M$=M$+FNN$(J$)+FNN$(T$)
+2011    IF MID$(P$,J%,1%)<>Q$ THEN 2050
+2015    T%=J%+D%*3%: IF T%<1% OR T%>9% THEN 2025
+2020    IF MID$(P$,T%,1%)="-" THEN J$=FNNUM$(J%): T$=FNNUM$(T%): M$=M$+FNN$(J$)+FNN$(T$)
+2025    T%=J%+D%*2%
+2026    IF T%<1% OR T%>9% OR (D%=1% AND (J%=1% OR J%=4% OR J%=7%)) OR (D%=-1% AND (J%=3% OR J%=6% OR J%=9%)) THEN 2035
+2030    IF INSTR(1%,Q$+"-",MID$(P$,T%,1%))=0% THEN J$=FNNUM$(J%):T$=FNNUM$(T%):M$=M$+FNN$(J$)+FNN$(T$)
+2035    T%=J%+D%*4%: IF T%<1% OR T%>9% OR J%=3% OR J%=7% THEN 2050
+2040    IF INSTR(1%,Q$+"-",MID$(P$,T%,1%))=0% THEN J$=FNNUM$(J%):T$=FNNUM$(T%):M$=M$+FNN$(J$)+FNN$(T$)
 2050 NEXT J%
 2051 IF D%=1% AND M$<>"" THEN Q%=Q%+1%: PRINT "Q%=" Q%: E$=P$: G$=FNNUM$(P%): P$(Q%)=FNN$(G$)+E$+M$: REM temp. variables E$ and G$ are crucial!
 2060 RETURN
 3000 'Show P$(Q%)                                                                        '***
 3010 FOR L%=1% TO Q%                                                                     '***
-3020   PRINT P$(L%)                                                                      '***
+3020    PRINT P$(L%)                                                                     '***
 3030 NEXT                                                                                '***
 3040 RETURN                                                                              '***
 9999 END
