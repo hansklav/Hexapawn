@@ -11,7 +11,7 @@ MODULE Hexapawn;
   that I found in an early DEC edition of the book '101 BASIC Computer Games', p. 122.
   http://www.bitsavers.org/pdf/dec/_Books/101_BASIC_Computer_Games_Mar75.pdf
   
-  You can find the original BASIC-PLUS source here: https://github.com/hansklav/Oberon-07
+  You can find the original BASIC-PLUS source here: https://github.com/hansklav/Hexapawn/tree/main/BASIC
   There you can also find my rewrite to BASICA (IBM/Microsoft BASIC). In order to decipher 
   the BASIC source (which for me was quite impenetrable) I made some cross-references
   in the Oberon-07 comments to the BASIC lines and variables. To stay close to the BASIC
