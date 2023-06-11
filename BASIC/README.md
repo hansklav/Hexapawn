@@ -3,3 +3,4 @@ HEX.BAS is the original DEC BASIC-PLUS version by Jeff Dalton as published in th
 In DEC BASIC-PLUS  ! is REM and & is PRINT
 
 hexapawn.bas is my translation of HEX.BAS into IBM-PC BASIC (MS-BASIC, BASICA).
+Lines marked with '*** are my own additions to reveal the database that is gradually built by the program.
