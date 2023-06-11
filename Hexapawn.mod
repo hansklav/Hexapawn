@@ -6,6 +6,7 @@ MODULE Hexapawn;
 
   It is programmed in Oberon-07 using the OBNC compiler ( https://miasap.se/obnc/ ).
   Oberon-07 is the latest descendent of Pascal, designed by Niklaus Wirth himself.
+  For the command-line of any POSIX compatible operating system (UNIX, Linux, macOS, Windows).
   
   After a Digital Equipment Corp. BASIC-PLUS program for the PDP-11 by Jeff Dalton (1974)
   that I found in an early DEC edition of the book '101 BASIC Computer Games', p. 122.
