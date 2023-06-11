@@ -76,5 +76,5 @@
 2040 IF INSTR(1%,Q$+"-",MID$(P$,T%,1%))=0% THEN
         M$=M$+FNN$(J$)+FNN$(T$)
 2050 NEXT J%: IF D%=1% AND M$<>"" THEN Q%=Q%+1%: P$(Q%)=FNN$(P%)+P$+M$
-2060 RETURN
+2060 RETURN 
 9999 END
