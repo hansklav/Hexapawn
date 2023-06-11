@@ -112,25 +112,6 @@ MODULE Hexapawn;
         WriteLn("Input error: type two digits separated by a comma, then press <return>")
       END
     UNTIL In.Done & (c = ",");
-(*      
-    Out.String(s);  Out.String(" ");
-    In.Int(a);  ReadSeparator(c);  In.Int(b);
-    i := 0;
-    WHILE ~In.Done OR (a > 9) OR (c # ",") DO 
-      INC(i);
-      IF i = 5 THEN  (* to prevent an infinite loop after ^D *)
-        Out.Ln; Out.Ln;
-        WriteLn("Input error again!");
-        WriteLn("Or you pressed Ctrl+D at this prompt, which you shouldn't.");
-        WriteLn("To stop the program in the middle of a game press Ctrl+Z or Ctrl+C.");       
-        ASSERT(FALSE)
-      ELSIF i < 5 THEN
-        WriteLn("Input error: type two digits separated by a comma, then press <return>");
-        Out.String(s);  Out.String(" ");
-        In.Int(a);  In.Char(c);  In.Int(b)    
-      END
-    END; 
-*)
     mv.from := a;  mv.to := b
   END InputMove;
 
