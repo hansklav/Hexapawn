@@ -2,4 +2,4 @@ HEX.BAS is the original DEC PDP-11 BASIC-PLUS version by Jeff Dalton as publishe
 Note: in DEC BASIC-PLUS:
   ! is REM
   & is PRINT
-hexapawn.bas is my translation of HEX.BAS to IBM PC BASIC (BASICA).
+hexapawn.bas is my translation of HEX.BAS to IBM-PC BASIC (MS-BASIC, BASICA).
