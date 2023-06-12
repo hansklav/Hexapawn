@@ -118,9 +118,10 @@ MODULE Hexapawn;
 
   
   PROCEDURE InputChar (s: String): CHAR;
+  (* Outputs a prompt, then waits for the user to type some character, which is returned *)
     VAR ch: CHAR;
 
-    PROCEDURE FlushBuffer;  (* Empty the keyboard buffer *)
+    PROCEDURE FlushBuffer;  (* Empties the keyboard buffer *)
       VAR c: CHAR;
     BEGIN
       IF Input.Available() > 0 THEN
