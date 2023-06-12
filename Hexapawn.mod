@@ -103,7 +103,7 @@ MODULE Hexapawn;
     REPEAT INC(i);
       Out.String(s);  Out.String(" ");
       In.Int(a);  ReadSeparator(c);  In.Int(b);
-      IF i = 5 THEN  (* to prevent an infinite loop after ^D *)
+      IF i = 5 THEN  (* to prevent an infinite loop after Ctrl+D *)
         Out.Ln; Out.Ln;
         WriteLn("Input error again!");
         WriteLn("Or you pressed Ctrl+D at this prompt, which you shouldn't.");
