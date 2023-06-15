@@ -12,7 +12,7 @@
 12'     IT HERE AND RESIGNS.
 13' From the book '101 BASIC Computer Games', Digital Equipment Corp., 1973
 14' The original version HEX.BAS was written in DEC PDP-11 BASIC-PLUS.
-15' This IBM-PC BASIC (MS-BASIC, BASICA) version by Hans Klaver, 2021.
+15' This IBM-PC BASIC (BASICA, GW-BASIC) version by Hans Klaver, 2021.
 16'
 17 REM Put the user-defined functions before all other lines (to prevent a jump over them)
 18 DEF FNR$(A$,N%)=MID$(A$,N%,LEN(A$)-N%+1%): 'Emulates DEC BASIC-PLUS function RIGHT(A$,N%)
